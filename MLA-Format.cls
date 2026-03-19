@@ -24,11 +24,25 @@
 \RequirePackage[margin=1in]{geometry}
 \setlength{\headheight}{14.5pt}
 
+\raggedright
 
 %%%%%%%%%% SECTION HEADERS %%%%%%%%%%
 \RequirePackage{titlesec}
-\titleformat{\section}[block]{\normalfont\normalsize}{\thesection}{1em}{}
-\titleformat{\subsection}[block]{\normalfont\normalsize}{\thesubsection}{1em}{}
+\titleformat{\section}
+{
+	\normalsize\bfseries\scshape
+}
+{}{0em}{}
+
+\titlespacing{\section}{0em}{0em}{0em}
+
+\titleformat{\subsection}
+{
+	\normalsize\itshape
+}
+{}{0em}{}
+
+\titlespacing{\subsection}{0em}{0em}{0em}
 
 %%%%%%%%%% LINE SPACING %%%%%%%%%%
 \RequirePackage{setspace}
@@ -62,11 +76,11 @@
 
 \newcommand{\settitlepage}{%
 	\noindent \@author\\
-	\@instructor\\
-	\@course\\
-	\@date
+	\noindent\@instructor\\
+	\noindent\@course\\
+	\noindent\@date
 	\begin{center}
-		\section{\@title}
+		{\@title}
 	\end{center}
 }
 \makeatother
