@@ -1,0 +1,216 @@
+# ============================================================
+# .gitignore for LaTeX Class Files Repository (macOS)
+# ============================================================
+
+# ---------------------------
+# macOS System Files
+# ---------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ---------------------------
+# LaTeX Auxiliary Files
+# ---------------------------
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# ---------------------------
+# LaTeX Intermediate Files
+# ---------------------------
+*.dvi
+*.xdv
+*-converted-to.*
+*.ps
+*.eps
+*.pdf
+
+# ---------------------------
+# Bibliography / References
+# ---------------------------
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# ---------------------------
+# Build Tool Files
+# ---------------------------
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# ---------------------------
+# Index / Glossary Files
+# ---------------------------
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ilg
+*.ind
+*.ist
+*.xdy
+
+# ---------------------------
+# Nomenclature
+# ---------------------------
+*.nlg
+*.nlo
+*.nls
+
+# ---------------------------
+# Acronyms
+# ---------------------------
+*.acn
+*.acr
+*.alg
+
+# ---------------------------
+# Beamer Snapshots
+# ---------------------------
+_minted*
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# ---------------------------
+# Algorithm Files
+# ---------------------------
+*.alg
+*.loa
+
+# ---------------------------
+# Listings
+# ---------------------------
+*.lol
+
+# ---------------------------
+# TikZ / PGF Cache
+# ---------------------------
+*.dpth
+*.md5
+*.auxlock
+
+# ---------------------------
+# todonotes
+# ---------------------------
+*.tdo
+
+# ---------------------------
+# pgfplots
+# ---------------------------
+*.gnuplot
+*.table
+
+# ---------------------------
+# Xindy
+# ---------------------------
+*.xdy
+
+# ---------------------------
+# Makeindex
+# ---------------------------
+*.idx
+*.ilg
+*.ind
+
+# ---------------------------
+# Latexdiff
+# ---------------------------
+*.sav
+
+# ---------------------------
+# Editors / IDEs
+# ---------------------------
+
+# TeXShop
+*.bak
+*.pdftex
+
+# TeXStudio
+*.bak
+
+# Texpad
+.texpadtmp/
+
+# Visual Studio Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+\#*\#
+.\#*
+*.elc
+auto-save-list
+tramp
+
+# JetBrains (e.g. TeXiFy IDEA)
+.idea/
+
+# ---------------------------
+# Build Directories
+# ---------------------------
+build/
+out/
+dist/
+
+# ---------------------------
+# Test / Example Artifacts
+# ---------------------------
+# Keep .cls, .sty, .dtx, .ins source — ignore their compiled test output
+tests/**/*.pdf
+examples/**/*.pdf
+tests/**/*.aux
+examples/**/*.aux
+
+# ---------------------------
+# Package Documentation Build
+# ---------------------------
+# (keep .dtx and .ins; ignore generated docs)
+*.glo
+*.hd
+
+# ---------------------------
+# Misc
+# ---------------------------
+*.bak
+*.tmp
+*.temp
+thumbs.db
