@@ -5,7 +5,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{APA-Format-Class-Offline-Version}
+\ProvidesClass{APA-Format}
 
 \newif\if@msword
 \newif\if@cutepagenumbers
