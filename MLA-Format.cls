@@ -100,6 +100,17 @@
 %%%%%%%%%% DRAFT WATERMARK %%%%%%%%%%
 \RequirePackage[firstpageonly=true, fontsize=12pt, scale=13]{draftwatermark}
 
+% Inkscape Figures
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{/home/ericfan/Documents/SFU-Coursework/Figures}{#1.pdf_tex}
+}
+
 %%%%%%%%%% FORMAT ABSTRACT (optional) %%%%%%%%%%
 % \RequirePackage{changepage}
 %
