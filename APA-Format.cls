@@ -1,7 +1,7 @@
 % APA Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on February 13, 2026
+% Last updated on April 6, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -174,6 +174,7 @@
 
 \titlespacing{\subsubsection}{0em}{0em}{0em}
 
+%Titletoc Commands for APA table of contents
 \RequirePackage{titletoc}
 \titlecontents{section}[0in]{\normalfont\bfseries}{}{}{\titlerule*[1em]{.}\contentspage}
 \titlecontents{subsection}[0.25in]{\normalfont\bfseries}{}{}{\titlerule*[1em]{.}\contentspage}
@@ -190,8 +191,6 @@
 	\section*{References}
 	\printbibliography[heading=none]
 }
-
-
 
 %Title Page Command
 \newcommand{\institution}[1]{\def\@institution{#1}}
@@ -262,10 +261,10 @@
 \RequirePackage[firstpageonly=true, fontsize=12pt, scale=13]{draftwatermark}
 
 % Inkscape Figures
-\usepackage{import}
-\usepackage{xifthen}
-\usepackage{pdfpages}
-\usepackage{transparent}
+\RequirePackage{import}
+\RequirePackage{xifthen}
+\RequirePackage{pdfpages}
+\RequirePackage{transparent}
 
 \newcommand{\incfig}[1]{%
 	\def\svgwidth{\columnwidth}
