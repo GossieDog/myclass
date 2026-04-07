@@ -73,7 +73,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{verbatim}
 \RequirePackage{graphicx}
-\graphicspath{{~/Documents/Screenshots/}}
+\graphicspath{/home/ericfan/Pictures/Screenshots}
 
 %Caption Setup (Parts of code from apa7 class)
 \RequirePackage[singlelinecheck=off]{caption}
@@ -174,6 +174,13 @@
 
 \titlespacing{\subsubsection}{0em}{0em}{0em}
 
+\RequirePackage{titletoc}
+\titlecontents{section}[0in]{\normalfont\bfseries}{}{}{\titlerule*[1em]{.}\contentspage}
+\titlecontents{subsection}[0.25in]{\normalfont\bfseries}{}{}{\titlerule*[1em]{.}\contentspage}
+\titlecontents{subsubsection}[0.5in]{\normalfont\bfseries\itshape}{}{}{\titlerule*[1em]{.}\contentspage}
+\titlecontents{figure}[0in]{\normalfont}{}{}{\titlerule*[1em]{.}\contentspage}
+\titlecontents{table}[0in]{\normalfont}{}{}{\titlerule*[1em]{.}\contentspage}
+
 %Reference List
 \RequirePackage[backend=biber,
 	style=apa]{biblatex}
@@ -194,6 +201,11 @@
 
 \newcommand{\abstracttext}[1]{\def\@abstract{#1}}
 \newcommand{\keywords}[1]{\def\@keywords{#1}}
+\newcommand{\toc}[1]{\def\@tableofcontents{
+		\tableofcontents
+		\listoffigures
+		\listoftables
+	}}
 
 \newcommand{\settitlepage}{%
 	\vspace*{96pt}
@@ -205,44 +217,23 @@
 		{\@instructor} \\
 		{\@date}
 	\end{center}
-	\ifdefined\@abstract
+	\ifdefined\@abstract%
 		\newpage
 		\centerline{\bfseries Abstract}
 		\noindent
-		\@abstract
+		\@abstract%
 
-		\ifdefined\@keywords
-			{\itshape Keywords:} \@keywords
+		\ifdefined\@keywords%
+			{\itshape Keywords:} \@keywords%
 		\fi
+	\fi
+	\ifdefined\@tableofcontents%
+		\newpage
+		\@tableofcontents%
 	\fi
 	\pagebreak
 	\section{\@title}% %APA wants it as a level 1 heading
 }
-
-\renewcommand{\maketitle}{
-	\section{\@title} %APA wants it as a level 1 heading
-}
-
-%Old Title Page Command
-% \newcommand{\course}{}
-% \newcommand{\instructor}{}
-% %\title and \date already defined
-
-% \newcommand\settitlepage{
-%     \hfill
-%     \vspace{96pt}
-%     \begin{center}
-%         \textbf{\title}\\
-%         \vspace{24pt}
-%         Eric Fan\\
-%         Simon Fraser University\\
-%         \course\\
-%         \instructor\\
-%         \date
-%     \end{center}
-%     \pagebreak
-%     \section{\title}
-% }
 
 %Abstract Formatting
 \RequirePackage{changepage}
@@ -289,16 +280,3 @@
 	linkcolor    = black,    % Color of internal links
 	citecolor    = black      % Color of citations
 }
-
-%Add these commands to use default headings
-
-%\titleformat{\section}
-%    {\normalfont\Large\bfseries}{\thesection}{1em}{}
-%\titleformat{\subsection}
-%    {\normalfont\large\bfseries}{\thesubsection}{1em}{}
-%\titleformat{\subsubsection}
-%    {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
-%
-%\titlespacing*{\section}{0pt}{*3}{*2}
-%\titlespacing*{\subsection}{0pt}{*3}{*2}
-%\titlespacing*{\subsubsection}{0pt}{*3}{*2}
