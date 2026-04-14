@@ -30,7 +30,7 @@
 \RequirePackage{titlesec}
 \titleformat{\section}
 {
-	\normalsize\bfseries\scshape
+	\normalsize\scshape
 }
 {}{0em}{}
 
