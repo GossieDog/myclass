@@ -1,7 +1,7 @@
 % Chicago Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on March 19, 2026
+% Last updated on April 17, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -50,19 +50,27 @@
 
 \titleformat{\section}
 {
-	\normalsize\bfseries
+	\centering\normalsize\bfseries
 }
 {}{0em}{}
 
-\titlespacing{\section}{0em}{24pt}{0em}
+\titlespacing{\section}{0em}{0em}{0em}
 
 \titleformat{\subsection}
+{
+	\centering\normalsize
+}
+{}{0em}{}
+
+\titlespacing{\subsection}{0em}{0em}{0em}
+
+\titleformat{\subsubsection}
 {
 	\normalsize\itshape
 }
 {}{0em}{}
 
-\titlespacing{\subsection}{0em}{24pt}{0em}
+\titlespacing{\subsubsection}{0em}{0em}{0em}
 
 %%%%%%%%%% REFERENCES %%%%%%%%%%
 \RequirePackage{biblatex-chicago}
@@ -81,6 +89,7 @@
 \renewcommand{\date}[1]{\def\@date{#1}}
 
 \newcommand{\settitlepage}{%
+	\thispagestyle{empty}
 	\vspace*{108pt}
 	\begin{center}
 		{\normalsize\bfseries \@title} \\
@@ -90,6 +99,7 @@
 		{\@date}
 	\end{center}
 	\pagebreak
+	\setcounter{page}{1}
 }
 \makeatother
 
