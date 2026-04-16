@@ -1,7 +1,7 @@
 % MLA Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on March 19, 2026
+% Last updated on April 17, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -28,9 +28,10 @@
 
 %%%%%%%%%% SECTION HEADERS %%%%%%%%%%
 \RequirePackage{titlesec}
+
 \titleformat{\section}
 {
-	\normalsize\scshape
+	\normalsize\bfseries
 }
 {}{0em}{}
 
@@ -43,6 +44,14 @@
 {}{0em}{}
 
 \titlespacing{\subsection}{0em}{0em}{0em}
+
+\titleformat{\subsubsection}
+{
+	\centering\normalsize\bfseries
+}
+{}{0em}{}
+
+\titlespacing{\subsubsection}{0em}{0em}{0em}
 
 %%%%%%%%%% LINE SPACING %%%%%%%%%%
 \RequirePackage{setspace}
