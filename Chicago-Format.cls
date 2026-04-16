@@ -1,7 +1,7 @@
 % Chicago Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on April 17, 2026
+% Last updated on April 15, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -71,6 +71,30 @@
 {}{0em}{}
 
 \titlespacing{\subsubsection}{0em}{0em}{0em}
+
+%%%%%%%%%% CAPTIONS %%%%%%%%%%
+\RequirePackage[singlelinecheck=off]{caption}
+
+\DeclareCaptionLabelFormat{ChicagoLabel}{\noindent\normalsize\normalfont\raggedright{#1 #2}}
+\DeclareCaptionTextFormat{ChicagoText}{\noindent\normalsize\normalfont\raggedright{#1}}
+\DeclareCaptionLabelSeparator{ChicagoSpace}{. }
+
+\captionsetup[figure]{
+	position=below,
+	labelformat=ChicagoLabel,
+	textformat=ChicagoText,
+	labelsep=ChicagoSpace
+}
+
+\captionsetup[table]{
+	position=above,
+	labelformat=ChicagoLabel,
+	textformat=ChicagoText,
+}
+
+\newcommand{\tablenote}[1]{\par\noindent\flushleft\normalsize\normalfont\doublespacing\textit{\notelabel.} {#1}}
+
+\def\notelabel{Source}
 
 %%%%%%%%%% REFERENCES %%%%%%%%%%
 \RequirePackage{biblatex-chicago}
