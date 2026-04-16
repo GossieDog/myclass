@@ -1,7 +1,7 @@
 % APA Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on April 6, 2026
+% Last updated on April 16, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -206,7 +206,19 @@
 		\listoftables
 	}}
 
+\newcommand{\@checkfield}[3]{%
+	\@ifundefined{#1}{%
+		\ClassError{APA-Format}%
+		{#2 is missing}%
+		{Add \string#3 to your document preamble.}%
+		#3% apply fallback so compilation can continue if user presses 'i' to ignore
+	}{}%
+}
+
 \newcommand{\settitlepage}{%
+	\@checkfield{@institution}{Institution}{\institution{institution name}}%
+	\@checkfield{@course}{Course}{\course{course name}}%
+	\@checkfield{@instructor}{Instructor}{\instructor{instructor name}}%
 	\vspace*{96pt}
 	\begin{center}
 		{\normalsize\bfseries \@title} \\[24pt]

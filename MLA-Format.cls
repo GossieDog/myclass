@@ -1,7 +1,7 @@
 % MLA Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on April 15, 2026
+% Last updated on April 16, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -84,7 +84,18 @@
 \renewcommand{\date}[1]{\def\@date{#1}}
 \newcommand{\instructor}[1]{\def\@instructor{#1}}
 
+\newcommand{\@checkfield}[3]{%
+	\@ifundefined{#1}{%
+		\ClassError{MLA-Format}%
+		{#2 is missing}%
+		{Add \string#3 to your document preamble.}%
+		#3% apply fallback so compilation can continue if user presses 'i' to ignore
+	}{}%
+}
+
 \newcommand{\settitlepage}{%
+	\@checkfield{@course}{Course}{\course{course name}}%
+	\@checkfield{@instructor}{Instructor}{\instructor{instructor name}}%
 	\noindent \@author\\
 	\noindent\@instructor\\
 	\noindent\@course\\
