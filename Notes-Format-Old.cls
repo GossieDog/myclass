@@ -5,7 +5,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{Notes-Format}
+\ProvidesClass{Notes-Format-Old}
 
 \LoadClass[12pt]{article}
 
