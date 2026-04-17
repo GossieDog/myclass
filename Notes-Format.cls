@@ -44,7 +44,6 @@
 
 %%%%%%%%%% REFERENCES %%%%%%%%%%
 \RequirePackage[backend=biber]{biblatex-chicago}
-\addbibresource{/home/ericfan/Documents/SFU-Coursework/Zotero.bib}
 
 %%%%%%%%%% LINKS %%%%%%%%%%
 \RequirePackage{hyperref}
