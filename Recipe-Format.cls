@@ -188,3 +188,31 @@
 		{\@youtube}
 	\end{center}
 }
+
+\newcommand{\serves}[1]{\def\@serves{#1}}
+\newcommand{\preptime}[1]{\def\@preptime{#1}}
+\newcommand{\cooktime}[1]{\def\@cooktime{#1}}
+
+\newcommand{\infobox}{
+	\begin{metabox}
+		\begin{multicols}{3}
+			\begin{center}
+				\textcolor{red}{\faClock}\\[3pt]
+				{\small\bfseries Prep} \\[-1pt]
+				{\footnotesize \@preptime}
+			\end{center}
+			\columnbreak
+			\begin{center}
+				\textcolor{red}{\faFire}\\[3pt]
+				{\small\bfseries Cook} \\[-1pt]
+				{\footnotesize \@cooktime}
+			\end{center}
+			\columnbreak
+			\begin{center}
+				\textcolor{red}{\faUsers}\\[3pt]
+				{\small\bfseries Serves} \\[-1pt]
+				{\footnotesize \@serves}
+			\end{center}
+		\end{multicols}
+	\end{metabox}
+}
