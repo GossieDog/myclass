@@ -25,6 +25,7 @@
 \todostyle{green}{color=green!40!white} %Rewording stuff
 \todostyle{blue}{color=blue!40!white} %Adding stuff
 \todostyle{grey}{color=black!30!white} %Todos in notes sections
+\RequirePackage[firstpageonly=true, fontsize=12pt, scale=13]{draftwatermark}
 \RequirePackage[hidelinks=true]{hyperref}
 \RequirePackage{microtype}
 
@@ -49,13 +50,13 @@
 	}}
 
 \newcommand{\signature}[1]{\def\@signature{\includegraphics[width=1in]{#1}}}
+\newcommand{\person}[1]{\def\@person{\textit{#1}}}
 
 \newcommand{\header}{
 	\begin{center}
 		\begin{center}
 			{\huge \textbf{\@author}}
 		\end{center}
-		\vspace{10pt}
 		\textcolor{white!20!orange}{\faMapMarker} \; \@address \quad
 		% \textcolor{white!20!orange}{\faMapMarker} \; \href{https://maps.app.goo.gl/8VcvwSbvJyw1xLkr5}{Burnaby, British Columbia} \quad
 		\textcolor{white!20!orange}{\faPhone} \; \@phone \quad
@@ -70,13 +71,16 @@
 	\@department\\
 	\@companyaddress
 
-	Dear \@hiringmanager,
+	Dear \@person,
 }
 
 \newcommand{\closing}{
-	Cordially,
+	Sincerely,
 
 	\@signature
 
-	\@author
+	\@author\\
+	Pronouns:\ he, him, his\\
+	T:\ 720 456 8675\\
+	E:\ erickylefan@gmail.com
 }
