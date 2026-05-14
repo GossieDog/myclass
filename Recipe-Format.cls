@@ -179,7 +179,7 @@
 		{\Huge\bfseries\color{red} #1}
 	}}
 \newcommand{\youtube}[2]{\def\@youtube{
-		{\normalsize\color{darktext!60} \faYoutube\hspace{0.3em}A recipe by \href{#1}{#2}}
+		{\normalsize\color{darktext!60} \faYoutube\hspace{0.3em}\href{#1}{#2}}
 	}}
 
 \newcommand{\header}{
