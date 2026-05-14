@@ -34,6 +34,7 @@
 \setlength{\parskip}{1em}
 
 \pagenumbering{gobble}
+\raggedright
 
 %%%%%%%%%% HEADER %%%%%%%%%%
 \newcommand{\address}[2]{\def\@address{\href{#1}{#2}}}
@@ -81,6 +82,6 @@
 
 	\@author\\
 	Pronouns:\ he, him, his\\
-	T:\ 720 456 8675\\
-	E:\ erickylefan@gmail.com
+	% T:\ 720 456 8675\\
+	% E:\ erickylefan@gmail.com
 }
