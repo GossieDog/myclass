@@ -93,7 +93,7 @@
 		\@author\\
 		Pronouns:\ he, him, his
 
-		\includegraphics[width=2in]{~/Documents/Co-Op/Cover-Letters/SFU-IS.png}
+		\includegraphics[width=2in]{~/Documents/Co-Op/Figures/SFU-IS.png}
 
 		\begin{minipage}{4in}
 			\raggedright%
