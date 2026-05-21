@@ -13,7 +13,7 @@
 
 \ProcessOptions\relax
 
-\LoadClass{article}
+\LoadClass[letterpaper,11pt]{article}
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}

@@ -5,7 +5,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{Letter-Format}
+\ProvidesClass[letterpaper,11pt]{Letter-Format}
 
 \LoadClass{article}
 

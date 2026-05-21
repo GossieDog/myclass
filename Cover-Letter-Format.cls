@@ -1,7 +1,7 @@
 % Cover Letter Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on May 10, 2026
+% Last updated on May 21, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -13,7 +13,7 @@
 
 \ProcessOptions\relax
 
-\LoadClass{article}
+\LoadClass[letterpaper,11pt]{article}
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}

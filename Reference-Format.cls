@@ -1,13 +1,13 @@
 % Reference Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on May 20, 2026
+% Last updated on May 21, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
 \ProvidesClass{Reference-Format}
 
-\LoadClass{article}
+\LoadClass[letterpaper,11pt]{article}
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
