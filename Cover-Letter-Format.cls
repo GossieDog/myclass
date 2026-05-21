@@ -12,6 +12,8 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 
+\RequirePackage{tipa}
+
 \RequirePackage[margin=1in]{geometry}
 
 \RequirePackage{xcolor}
@@ -44,11 +46,11 @@
 
 \newcommand{\company}[1]{\def\@company{\textit{#1}}}
 \newcommand{\hiringmanager}[1]{\def\@hiringmanager{\textit{#1}}}
-\newcommand{\department}[1]{\def\@department{\textit{#1}}}
 \newcommand{\companyaddress}[2]{\def\@companyaddress{
 		\textit{#1}\\
 		\textit{#2}
 	}}
+\newcommand{\jobtitle}[1]{\def\@jobtitle{#1}}
 
 \newcommand{\signature}[1]{\def\@signature{\includegraphics[width=1in]{#1}}}
 \newcommand{\person}[1]{\def\@person{\textit{#1}}}
@@ -69,8 +71,9 @@
 
 	\@company\\
 	\@hiringmanager\\
-	\@department\\
 	\@companyaddress
+
+	\textbf{RE:\ \@jobtitle}
 
 	Dear \@person,
 }
@@ -81,7 +84,15 @@
 	\@signature
 
 	\@author\\
-	Pronouns:\ he, him, his\\
+	Pronouns:\ he, him, his
+
+	\includegraphics[width=2in]{~/Documents/Co-Op/Cover-Letters/SFU-IS.png}
+
+	\begin{minipage}{4in}
+		\raggedright%
+		\scriptsize{I respectfully acknowledge the xwmetkhkweyem (Musqueam), Skwxwu7mesh Uxwumixw (Squamish), selilwetal (Tsleil-Waututh), qiceyi (Katzie), kwikwetlem (Kwikwetlem), Qayqayt, Kwantlen, Semiahmoo and Tsawwassen peoples on whose unceded traditional territories our three campuses reside.}
+	\end{minipage}
+
 	% T:\ 720 456 8675\\
 	% E:\ erickylefan@gmail.com
 }
