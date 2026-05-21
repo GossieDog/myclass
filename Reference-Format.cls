@@ -18,7 +18,7 @@
 \RequirePackage{xcolor}
 
 \RequirePackage{titlesec}
-\titleformat{\section}{\large\bfseries}{}{0em}{}[{\vspace{2pt}\titlerule[1pt]\vspace{-0.5em}}]
+\titleformat{\section}{\large\bfseries}{}{0em}{}[{\vspace{2pt}\titlerule[1pt]}]
 
 \RequirePackage[textsize=scriptsize, obeyFinal, textwidth=2cm, colorinlistoftodos]{todonotes}
 \setuptodonotes{color=red!30!white} %Default (General/big picture stuff)
@@ -27,6 +27,8 @@
 \todostyle{grey}{color=black!30!white} %Todos in notes sections
 
 \RequirePackage[firstpageonly=true, fontsize=12pt, scale=13]{draftwatermark}
+\RequirePackage{mdframed}
+
 
 \RequirePackage[hidelinks=true]{hyperref}
 \RequirePackage{microtype}
@@ -55,9 +57,10 @@
 }
 
 \newcommand{\referenceentry}[6]{
-	\textbf{#1}\\
-	\textit{#2}\\
-	#3\\
-	Phone:\ #4 | Email:\ \href{mailto:#5}{#5}\\
-	Relationship:\ #6
+	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
+		\textbf{#1} \hfill Phone:\ #2 | Email:\ \href{mailto:#3}{#3}\\
+		\textit{#4}, \textit{#5}
+
+		Relationship:\ #6
+	\end{mdframed}
 }
