@@ -47,7 +47,6 @@
 		\begin{center}
 			{\huge \textbf{\@author}}
 		\end{center}
-		\vspace{10pt}
 		\textcolor{white!20!orange}{\faMapMarker} \; \@address \quad
 		% \textcolor{white!20!orange}{\faMapMarker} \; \href{https://maps.app.goo.gl/8VcvwSbvJyw1xLkr5}{Burnaby, British Columbia} \quad
 		\textcolor{white!20!orange}{\faPhone} \; \@phone \quad
