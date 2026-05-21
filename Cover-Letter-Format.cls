@@ -7,6 +7,12 @@
 
 \ProvidesClass{Cover-Letter-Format}
 
+\newif\if@sfu
+
+\DeclareOption{sfu}{\@sfutrue}
+
+\ProcessOptions\relax
+
 \LoadClass{article}
 
 \RequirePackage[T1]{fontenc}
@@ -78,21 +84,29 @@
 	Dear \@person,
 }
 
-\newcommand{\closing}{
-	Sincerely,
+\if@sfu
+	\newcommand{\closing}{
+		Sincerely,
 
-	\@signature
+		\@signature
 
-	\@author\\
-	Pronouns:\ he, him, his
+		\@author\\
+		Pronouns:\ he, him, his
 
-	\includegraphics[width=2in]{~/Documents/Co-Op/Cover-Letters/SFU-IS.png}
+		\includegraphics[width=2in]{~/Documents/Co-Op/Cover-Letters/SFU-IS.png}
 
-	\begin{minipage}{4in}
-		\raggedright%
-		\scriptsize{I respectfully acknowledge the xwmetkhkweyem (Musqueam), Skwxwu7mesh Uxwumixw (Squamish), selilwetal (Tsleil-Waututh), qiceyi (Katzie), kwikwetlem (Kwikwetlem), Qayqayt, Kwantlen, Semiahmoo and Tsawwassen peoples on whose unceded traditional territories our three campuses reside.}
-	\end{minipage}
+		\begin{minipage}{4in}
+			\raggedright%
+			\scriptsize{I respectfully acknowledge the xwmetkhkweyem (Musqueam), Skwxwu7mesh Uxwumixw (Squamish), selilwetal (Tsleil-Waututh), qiceyi (Katzie), kwikwetlem (Kwikwetlem), Qayqayt, Kwantlen, Semiahmoo and Tsawwassen peoples on whose unceded traditional territories our three campuses reside.}
+		\end{minipage}
+	}
+\else
+	\newcommand{\closing}{
+		Sincerely,
 
-	% T:\ 720 456 8675\\
-	% E:\ erickylefan@gmail.com
-}
+		\@signature
+
+		\@author\\
+		Pronouns:\ he, him, his
+	}
+\fi
