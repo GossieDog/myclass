@@ -90,7 +90,8 @@
 		\@signature
 
 		\@author\\
-		Pronouns:\ he, him, his
+		Pronouns:\ he, him, his\\
+		8888 University Dr., Burnaby, B.C. V5A 1S6
 
 		\includegraphics[width=2in]{~/Documents/Co-Op/Figures/SFU-IS.png}
 
