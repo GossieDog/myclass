@@ -63,12 +63,21 @@
 	\end{mdframed}
 }
 
-\newcommand{\educationentry}[3]{
+\newcommand{\educationentry}[4]{
 	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
 		\textbf{#1} \hfill #2 \\
-		#3
+		\textit{#3}
+
+		#4
 	\end{mdframed}
 }
+
+% \newcommand{\educationentry}[3]{
+% 	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
+% 		\textbf{#1} \hfill #2 \\
+% 		#3
+% 	\end{mdframed}
+% }
 
 \newcommand{\summary}[1]{
 	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
