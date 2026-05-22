@@ -5,9 +5,9 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass[letterpaper,11pt]{Letter-Format}
+\ProvidesClass{Letter-Format}
 
-\LoadClass{article}
+\LoadClass[letterpaper,11pt]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
