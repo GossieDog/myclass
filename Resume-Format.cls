@@ -9,29 +9,40 @@
 
 \LoadClass[letterpaper,11pt]{article}
 
-\RequirePackage[margin=0.5in]{geometry}
+\RequirePackage[top=0.5in, left=0.5in, right=0.5in, bottom=1in]{geometry}
+
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[c]{\thepage}
+
 \RequirePackage{xcolor}
 \RequirePackage{enumitem}
+
 \RequirePackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[{\vspace{2pt}\titlerule[1pt]}]
+
 \RequirePackage{tabularx}
 \RequirePackage{fontawesome5}
 \RequirePackage{multicol}
 \RequirePackage{mdframed}
+
 \RequirePackage[textsize=scriptsize, obeyFinal, textwidth=2cm, colorinlistoftodos]{todonotes}
 \setuptodonotes{color=red!30!white} %Default (General/big picture stuff)
 \todostyle{green}{color=green!40!white} %Rewording stuff
 \todostyle{blue}{color=blue!40!white} %Adding stuff
 \todostyle{grey}{color=black!30!white} %Todos in notes sections
+
 \RequirePackage[firstpageonly=true, fontsize=12pt, scale=13]{draftwatermark}
+
 \RequirePackage[hidelinks]{hyperref}
+
 \RequirePackage{microtype}
 
-\pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlist[itemize]{noitemsep, topsep=0pt}
 
-\titleformat{\section}{\large\bfseries}{}{0em}{}[{\vspace{2pt}\titlerule[1pt]}]
-
+\renewcommand{\headrulewidth}{0em}
 
 %%%%%%%%%% HEADER %%%%%%%%%%
 \newcommand{\address}[2]{\def\@address{\href{#1}{#2}}}
