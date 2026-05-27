@@ -1,7 +1,7 @@
 % Thank You Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on May 21, 2026
+% Last updated on May 27, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -59,17 +59,18 @@
 
 \newcommand{\signature}[1]{\def\@signature{\includegraphics[width=1in]{#1}}}
 \newcommand{\person}[1]{\def\@person{\textit{#1}}}
+\newcommand{\persontwo}[1]{\def\@persontwo{\textit{#1}}}
 
 \newcommand{\header}{
 	\begin{center}
 		\begin{center}
 			{\huge \textbf{\@author}}
 		\end{center}
-		\textcolor{white!20!orange}{\faMapMarker} \; \@address \quad
+		\@address \quad
 		% \textcolor{white!20!orange}{\faMapMarker} \; \href{https://maps.app.goo.gl/8VcvwSbvJyw1xLkr5}{Burnaby, British Columbia} \quad
-		\textcolor{white!20!orange}{\faPhone} \; \@phone \quad
-		\textcolor{white!20!orange}{\faEnvelope} \; \@email \quad
-		\textcolor{white!20!orange}{\faLinkedin} \; \@linkedin
+		\@phone \quad
+		\@email \quad
+		\@linkedin
 	\end{center}
 
 	\today
@@ -80,7 +81,7 @@
 
 	\textbf{\@subject}
 
-	Hi \@person,
+	Hi \@persontwo,
 }
 
 \if@sfu

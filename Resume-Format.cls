@@ -1,7 +1,7 @@
 % Resume Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on May 10, 2026
+% Last updated on May 27, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -56,11 +56,11 @@
 			{\huge \textbf{\@author}}
 		\end{center}
 		\vspace{10pt}
-		\textcolor{white!20!orange}{\faMapMarker} \; \@address \quad
+		\@address \quad
 		% \textcolor{white!20!orange}{\faMapMarker} \; \href{https://maps.app.goo.gl/8VcvwSbvJyw1xLkr5}{Burnaby, British Columbia} \quad
-		\textcolor{white!20!orange}{\faPhone} \; \@phone \quad
-		\textcolor{white!20!orange}{\faEnvelope} \; \@email \quad
-		\textcolor{white!20!orange}{\faLinkedin} \; \@linkedin
+		\@phone \quad
+		\@email \quad
+		\@linkedin
 	\end{center}
 }
 
