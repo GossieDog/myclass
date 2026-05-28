@@ -65,6 +65,15 @@
 }
 
 %%%%%%%%%% ENTRY COMMANDS %%%%%%%%%%
+\newcommand{\skills}[1]{
+	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
+		\vspace{-\multicolsep}
+		\begin{multicols}{2}
+			{#1}
+		\end{multicols}
+	\end{mdframed}
+}
+
 \newcommand{\workentry}[5]{
 	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
 		\textbf{#1} \hfill #2 \\
