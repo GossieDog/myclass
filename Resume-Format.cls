@@ -1,7 +1,7 @@
 % Resume Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on May 27, 2026
+% Last updated on May 28, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -9,7 +9,7 @@
 
 \LoadClass[letterpaper,11pt]{article}
 
-\RequirePackage[top=0.5in, left=0.5in, right=0.5in, bottom=1in]{geometry}
+\RequirePackage[top=0.5in, left=0.75in, right=0.75in, bottom=1in]{geometry}
 
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
@@ -91,13 +91,6 @@
 		#4
 	\end{mdframed}
 }
-
-% \newcommand{\educationentry}[3]{
-% 	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
-% 		\textbf{#1} \hfill #2 \\
-% 		#3
-% 	\end{mdframed}
-% }
 
 \newcommand{\summary}[1]{
 	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
