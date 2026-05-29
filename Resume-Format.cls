@@ -67,6 +67,7 @@
 %%%%%%%%%% ENTRY COMMANDS %%%%%%%%%%
 \newcommand{\skills}[1]{
 	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
+		\raggedright%
 		\vspace{-\multicolsep}
 		\begin{multicols}{2}
 			{#1}
@@ -76,6 +77,7 @@
 
 \newcommand{\workentry}[5]{
 	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
+		\raggedright%
 		\textbf{#1} \hfill #2 \\
 		\textit{#3, #4}
 
@@ -85,6 +87,7 @@
 
 \newcommand{\educationentry}[4]{
 	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
+		\raggedright%
 		\textbf{#1} \hfill #2 \\
 		\textit{#3}
 
