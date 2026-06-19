@@ -49,6 +49,7 @@
 \newcommand{\linkedin}[2]{\def\@linkedin{\href{#1}{#2}}}
 \newcommand{\email}[1]{\def\@email{\href{mailto:#1}{#1}}}
 \newcommand{\phone}[3]{\def\@phone{(#1) #2-#3}}
+\newcommand{\website}[2]{\def\@website{\href{#1}{#2}}}
 
 \newcommand{\header}{
 	\begin{center}
@@ -60,7 +61,8 @@
 		% \textcolor{white!20!orange}{\faMapMarker} \; \href{https://maps.app.goo.gl/8VcvwSbvJyw1xLkr5}{Burnaby, British Columbia} \quad
 		\@phone \quad
 		\@email \quad
-		\@linkedin
+		\@linkedin \quad
+		\@website
 	\end{center}
 }
 
