@@ -14,6 +14,9 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 
+\RequirePackage{verbatim}
+\RequirePackage{graphicx}
+
 \RequirePackage{xparse}
 \RequirePackage{lipsum}
 \RequirePackage{xcolor}
