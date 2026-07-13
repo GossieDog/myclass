@@ -73,7 +73,6 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{verbatim}
 \RequirePackage{graphicx}
-\graphicspath{/home/ericfan/Pictures/Screenshots}
 
 %Caption Setup (Parts of code from apa7 class)
 \RequirePackage[singlelinecheck=off]{caption}
