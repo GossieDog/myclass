@@ -158,9 +158,9 @@
 \usepackage{pdfpages}
 \usepackage{transparent}
 
-\newcommand{\incfig}[1]{%
+\newcommand{\inkfig}[1]{%
 	\def\svgwidth{\columnwidth}
-	\import{/home/ericfan/Documents/SFU-Coursework/Figures}{#1.pdf_tex}
+	\import{/home/ericfan/Documents/SFU-Coursework/Inkscape-Figures}{#1.pdf_tex}
 }
 
 %%%%%%%%%% LINKS %%%%%%%%%%
