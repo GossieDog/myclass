@@ -30,6 +30,7 @@
 \renewcommand{\headrule}{}
 \fancyhead[C]{\pgfornamenthan[scale=0.2,color=red]{60}}
 \fancyfoot[C]{\thepage}
+\pagestyle{fancy}
 
 %%%%%%%%%% HEADINGS %%%%%%%%%%
 \RequirePackage{titlesec}
