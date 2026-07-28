@@ -12,38 +12,12 @@
 \newif\if@instructions
 \newif\if@notes
 
-%Unnecessary{
-% \newif\if@gossie
-% \newif\if@food
-%}
-
 \DeclareOption{MSWord}{\@mswordtrue}
 \DeclareOption{cutepagenumbers}{\@cutepagenumberstrue}
 \DeclareOption{instructions}{\@instructionstrue}
 \DeclareOption{notes}{\@notestrue}
 
-%Unnecessary{
-% \DeclareOption{Gossie}{\@gossietrue}
-% \DeclareOption{food}{\@foodtrue}
-%}
-
 \ProcessOptions\relax
-
-%Unnecessary{
-% \if@gossie\else
-%     \ClassError{APA Format Class Offline Version}
-%     {Don't forget Gossie!!!}
-%     {Use:
-%         \string\documentclass[Gossie]{APA Format Class Offline Version}}
-% \fi
-
-% \if@food\else
-%     \ClassError{APA Format Class Offline Version}
-%     {Don't forget to feed Gossie!!!}
-%     {Use:
-%         \string\documentclass[food]{APA Format Class Offline Version}}
-% \fi
-%}
 
 \LoadClass[12pt]{article}
 
@@ -69,6 +43,7 @@
 	\newcommand{\notes}[1]{}
 \fi
 
+% General packages
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{verbatim}
@@ -245,7 +220,7 @@
 	\section{\@title}% %APA wants it as a level 1 heading
 }
 
-%Abstract Formatting
+%Abstract formatting
 \RequirePackage{changepage}
 
 \renewenvironment{abstract}{
@@ -285,8 +260,8 @@
 %Links
 \RequirePackage{hyperref}
 \hypersetup{
-	colorlinks   = true,    % Colors links instead of ugly boxes
-	urlcolor     = black,    % Color for external hyperlinks
-	linkcolor    = black,    % Color of internal links
-	citecolor    = black      % Color of citations
+	colorlinks   = true,
+	urlcolor     = black,
+	linkcolor    = black,
+	citecolor    = black
 }
