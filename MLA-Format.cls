@@ -69,8 +69,7 @@
 \fancyhead[R]{Fan \thepage}
 
 %%%%%%%%%% REFERNCES %%%%%%%%%%
-\RequirePackage[backend=biber,
-	style=mla]{biblatex}
+\RequirePackage[backend=biber,style=mla]{biblatex}
 \setlength{\bibhang}{0.5in}
 
 \newcommand{\referencelist}{

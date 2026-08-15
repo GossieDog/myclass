@@ -157,8 +157,7 @@
 \titlecontents{table}[0in]{\normalfont}{}{}{\titlerule*[1em]{.}\contentspage}
 
 %Reference List
-\RequirePackage[backend=biber,
-	style=apa]{biblatex}
+\RequirePackage[backend=biber,style=apa]{biblatex}
 
 \newcommand{\referencelist}{
 	\pagebreak
