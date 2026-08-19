@@ -1,7 +1,7 @@
 % MLA Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on April 16, 2026
+% Last updated on August 19, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -55,6 +55,33 @@
 {}{0em}{}
 
 \titlespacing{\subsubsection}{0em}{0em}{0em}
+
+%%%%%%%%%% CAPTIONS %%%%%%%%%%
+\RequirePackage[singlelinecheck=off]{caption}
+
+\DeclareCaptionLabelFormat{MLALabel}{\doublespacing\noindent\normalsize\normalfont\raggedright{#1 #2}}
+\DeclareCaptionTextFormat{MLAText}{\doublespacing\noindent\normalsize\normalfont\raggedright{#1}}
+\DeclareCaptionLabelSeparator{MLASpace}{. }
+\DeclareCaptionLabelSeparator{MLATableSpace}{\par}
+
+\captionsetup[figure]{
+	position=below,
+	name=Fig.,
+	labelformat=MLALabel,
+	textformat=MLAText,
+	labelsep=MLASpace
+}
+
+\captionsetup[table]{
+	position=above,
+	labelformat=MLALabel,
+	textformat=MLAText,
+	labelsep=MLATableSpace
+}
+
+\newcommand{\tablenote}[1]{\par\noindent\flushleft\normalsize\normalfont\doublespacing{\notelabel.} {#1}}
+
+\def\notelabel{Source}
 
 %%%%%%%%%% LINE SPACING %%%%%%%%%%
 \RequirePackage{setspace}
