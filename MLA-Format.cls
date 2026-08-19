@@ -87,13 +87,25 @@
 \RequirePackage{setspace}
 \doublespacing
 
+% Check Field Command
+\newcommand{\@checkfield}[3]{%
+	\@ifundefined{#1}{%
+		\ClassError{MLA-Format}%
+		{#2 is missing}%
+		{Add \string#3 to your document preamble.}%
+		#3% apply fallback so compilation can continue if user presses 'i' to ignore
+	}{}%
+}
+
 %Set Headers and Footers
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot{}
 \fancyhead[L]{}
-\fancyhead[R]{Fan \thepage}
+\AtBeginDocument{\@checkfield{@lastname}{lastname}{\lastname{lastname}}}
+\newcommand{\lastname}[1]{\def\@lastname{#1 }}
+\fancyhead[R]{\@lastname \thepage}
 
 %%%%%%%%%% REFERNCES %%%%%%%%%%
 \RequirePackage[backend=biber,style=mla]{biblatex}
@@ -112,15 +124,6 @@
 \newcommand{\course}[1]{\def\@course{#1}}
 \renewcommand{\date}[1]{\def\@date{#1}}
 \newcommand{\instructor}[1]{\def\@instructor{#1}}
-
-\newcommand{\@checkfield}[3]{%
-	\@ifundefined{#1}{%
-		\ClassError{MLA-Format}%
-		{#2 is missing}%
-		{Add \string#3 to your document preamble.}%
-		#3% apply fallback so compilation can continue if user presses 'i' to ignore
-	}{}%
-}
 
 \newcommand{\settitlepage}{%
 	\@checkfield{@course}{Course}{\course{course name}}%
