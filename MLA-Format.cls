@@ -42,7 +42,7 @@
 
 \titleformat{\subsection}
 {
-	\normalsize\itshape
+	\normalsize\itshape % Could use small caps
 }
 {}{0em}{}
 
