@@ -1,7 +1,7 @@
 % Chicago Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on April 16, 2026
+% Last updated on August 19, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -75,8 +75,8 @@
 %%%%%%%%%% CAPTIONS %%%%%%%%%%
 \RequirePackage[singlelinecheck=off]{caption}
 
-\DeclareCaptionLabelFormat{ChicagoLabel}{\noindent\normalsize\normalfont\raggedright{#1 #2}}
-\DeclareCaptionTextFormat{ChicagoText}{\noindent\normalsize\normalfont\raggedright{#1}}
+\DeclareCaptionLabelFormat{ChicagoLabel}{\doublespacing\noindent\normalsize\normalfont\raggedright{#1 #2}}
+\DeclareCaptionTextFormat{ChicagoText}{\doublespacing\noindent\normalsize\normalfont\raggedright{#1}}
 \DeclareCaptionLabelSeparator{ChicagoSpace}{. }
 
 \captionsetup[figure]{

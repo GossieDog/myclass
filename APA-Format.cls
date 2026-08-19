@@ -1,7 +1,7 @@
 % APA Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on July 28, 2026
+% Last updated on August 19, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -86,8 +86,8 @@
 	\AtBeginDocument{
 		\setlength{\parindent}{0.5in}
 		\usepackage{indentfirst}
-		\newcommand{\figurenote}[1]{\par\noindent\flushleft\normalsize\normalfont\doublespacing\textit{\notelabel.} {#1}}
-		\newcommand{\tablenote}[1]{\par\noindent\flushleft\normalsize\normalfont\doublespacing\textit{\notelabel.} {#1}}
+		\newcommand{\figurenote}[1]{\par\noindent\flushleft\normalsize\doublespacing\normalfont\doublespacing\textit{\notelabel.} {#1}}
+		\newcommand{\tablenote}[1]{\par\noindent\flushleft\normalsize\doublespacing\normalfont\doublespacing\textit{\notelabel.} {#1}}
 		\usepackage{microtype}
 	}
 \fi
