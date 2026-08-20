@@ -115,6 +115,10 @@
 	\newpage
 	\begin{center}
 		Works Cited
+
+		\vspace{-\itemsep}
+
+		\vspace{-\topsep}
 	\end{center}
 	\printbibliography[heading=none]
 }
@@ -135,6 +139,7 @@
 	\begin{center}
 		{\@title}
 	\end{center}
+	\vspace{-\topsep}
 }
 \makeatother
 
