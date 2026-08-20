@@ -160,7 +160,7 @@
 \RequirePackage[backend=biber,style=apa]{biblatex}
 
 \newcommand{\referencelist}{
-	\pagebreak
+	\newpage
 	\section*{References}
 	\printbibliography[heading=none]
 }
@@ -215,7 +215,7 @@
 		\newpage
 		\@tableofcontents%
 	\fi
-	\pagebreak
+	\newpage
 	\section{\@title}% %APA wants it as a level 1 heading
 }
 

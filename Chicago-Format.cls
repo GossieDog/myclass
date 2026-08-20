@@ -100,7 +100,7 @@
 \RequirePackage{biblatex-chicago}
 
 \newcommand{\referencelist}{
-	\pagebreak
+	\newpage
 	\begin{center}
 		\textbf{Bibliography}
 	\end{center}
@@ -132,7 +132,7 @@
 		{\@course} \\
 		{\@date}
 	\end{center}
-	\pagebreak
+	\newpage
 	\setcounter{page}{1}
 }
 \makeatother

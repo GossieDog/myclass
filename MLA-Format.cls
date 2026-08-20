@@ -112,7 +112,7 @@
 \setlength{\bibhang}{0.5in}
 
 \newcommand{\referencelist}{
-	\pagebreak
+	\newpage
 	\begin{center}
 		Works Cited
 	\end{center}
