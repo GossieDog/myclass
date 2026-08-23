@@ -45,6 +45,9 @@
 %%%%%%%%%% REFERENCES %%%%%%%%%%
 \RequirePackage[backend=biber]{biblatex-chicago}
 
+%%%%%%%%%% INTERNAL REFERENCES %%%%%%%%%%
+\usepackage{cleveref}
+
 %%%%%%%%%% LINKS %%%%%%%%%%
 \RequirePackage{hyperref}
 \hypersetup{

@@ -163,6 +163,9 @@
 	\import{/home/ericfan/Documents/SFU-Coursework/Inkscape-Figures}{#1.pdf_tex}
 }
 
+%%%%%%%%%% INTERNAL REFERENCES %%%%%%%%%%
+\usepackage{cleveref}
+
 %%%%%%%%%% LINKS %%%%%%%%%%
 \RequirePackage{hyperref}
 \hypersetup{

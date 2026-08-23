@@ -180,6 +180,9 @@
 % }
 % {\end{adjustwidth}}
 
+%%%%%%%%%% INTERNAL REFERENCES %%%%%%%%%%
+\usepackage{cleveref}
+
 %%%%%%%%%% LINKS %%%%%%%%%%
 \RequirePackage{hyperref} %comment out package to get rid of linked in-text citations
 \hypersetup{
