@@ -49,9 +49,6 @@
 %%%%%%%%%% REFERENCES %%%%%%%%%%
 \RequirePackage[backend=biber]{biblatex-chicago}
 
-%%%%%%%%%% INTERNAL REFERENCES %%%%%%%%%%
-\usepackage{cleveref}
-
 %%%%%%%%%% LINKS %%%%%%%%%%
 \RequirePackage{hyperref}
 \hypersetup{
@@ -60,6 +57,9 @@
 	linkcolor    = black,    % Color of internal links
 	citecolor    = black      % Color of citations
 }
+
+%%%%%%%%%% INTERNAL REFERENCES %%%%%%%%%%
+\usepackage{cleveref}
 
 %%%%%%%%%% TYPOGRAPHY %%%%%%%%%%
 \RequirePackage[nopatch=footnote]{microtype}

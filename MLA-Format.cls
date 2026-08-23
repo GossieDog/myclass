@@ -180,9 +180,6 @@
 % }
 % {\end{adjustwidth}}
 
-%%%%%%%%%% INTERNAL REFERENCES %%%%%%%%%%
-\usepackage{cleveref}
-
 %%%%%%%%%% LINKS %%%%%%%%%%
 \RequirePackage{hyperref} %comment out package to get rid of linked in-text citations
 \hypersetup{
@@ -191,6 +188,9 @@
 	linkcolor    = black,    % Color of internal links
 	citecolor    = black      % Color of citations
 }
+
+%%%%%%%%%% INTERNAL REFERENCES %%%%%%%%%%
+\usepackage{cleveref}
 
 %%%%%%%%%% BETTER TYPOGRAPHY %%%%%%%%%%
 \RequirePackage{microtype}

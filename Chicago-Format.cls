@@ -163,9 +163,6 @@
 	\import{/home/ericfan/Documents/SFU-Coursework/Inkscape-Figures}{#1.pdf_tex}
 }
 
-%%%%%%%%%% INTERNAL REFERENCES %%%%%%%%%%
-\usepackage{cleveref}
-
 %%%%%%%%%% LINKS %%%%%%%%%%
 \RequirePackage{hyperref}
 \hypersetup{
@@ -174,6 +171,9 @@
 	linkcolor    = black,    % Color of internal links
 	citecolor    = black      % Color of citations
 }
+
+%%%%%%%%%% INTERNAL REFERENCES %%%%%%%%%%
+\usepackage{cleveref}
 
 %%%%%%%%%% BETTER TYPOGRAPHY %%%%%%%%%%
 \RequirePackage{microtype}
