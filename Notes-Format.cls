@@ -22,6 +22,10 @@
 \RequirePackage{multicol}
 \RequirePackage{lipsum}
 
+%%%%%%%%%% QUOTES %%%%%%%%%%
+\RequirePackage{csquotes}
+\MakeOuterQuote{"}
+
 %%%%%%%%%% PAGE SETUP %%%%%%%%%%
 \RequirePackage[top=1.5in, bottom=1.5in, left=1in, right=1.5in]{geometry}
 
@@ -56,10 +60,6 @@
 	linkcolor    = black,    % Color of internal links
 	citecolor    = black      % Color of citations
 }
-
-%%%%%%%%%% QUOTES %%%%%%%%%%
-\RequirePackage{csquotes}
-\MakeOuterQuote{"}
 
 %%%%%%%%%% TYPOGRAPHY %%%%%%%%%%
 \RequirePackage[nopatch=footnote]{microtype}
