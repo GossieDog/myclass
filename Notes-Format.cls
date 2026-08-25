@@ -1,7 +1,7 @@
 %%%%%%%%%% NOTES CLASS %%%%%%%%%%
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on April 17, 2025
+% Last updated on August 25, 2025
 
 \NeedsTeXFormat{LaTeX2e}
 
