@@ -80,6 +80,7 @@
 		\usepackage{indentfirst}
 		\newcommand{\figurenote}[1]{\par\noindent\flushleft\normalsize\singlespacing\setstretch{1.92}\normalfont\textit{\notelabel.} {#1}}
 		\newcommand{\tablenote}[1]{\par\noindent\flushleft\normalsize\singlespacing\setstretch{1.92}\normalfont\textit{\notelabel.} {#1}}
+		\usepackage{cleveref}
 		\usepackage{microtype}
 	}
 \else
@@ -88,6 +89,7 @@
 		\usepackage{indentfirst}
 		\newcommand{\figurenote}[1]{\par\noindent\flushleft\normalsize\doublespacing\normalfont\doublespacing\textit{\notelabel.} {#1}}
 		\newcommand{\tablenote}[1]{\par\noindent\flushleft\normalsize\doublespacing\normalfont\doublespacing\textit{\notelabel.} {#1}}
+		\usepackage{cleveref}
 		\usepackage{microtype}
 	}
 \fi
@@ -265,5 +267,3 @@
 	citecolor    = black
 }
 
-% Internal References
-\usepackage{cleveref}
