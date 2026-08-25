@@ -1,13 +1,37 @@
 % MLA Format Class Offline Version
 % Author: Gossie Fan
 % License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
-% Last updated on August 20, 2026
+% Last updated on August 25, 2026
 
 \NeedsTeXFormat{LaTeX2e}
 
 \ProvidesClass{MLA-Format}
 
+\newif\if@instructions
+\newif\if@notes
+
+\DeclareOption{instructions}{\@instructionstrue}
+\DeclareOption{notes}{\@notestrue}
+
+\ProcessOptions\relax
+
 \LoadClass[12pt]{article}
+
+%%%%%%%%%% Instructions %%%%%%%%%%
+
+\if@instructions
+	\newcommand{\instructions}[1]{#1}
+\else
+	\newcommand{\instructions}[1]{}
+\fi
+
+%%%%%%%%%% Notes %%%%%%%%%%
+
+\if@notes
+	\newcommand{\notes}[1]{#1}
+\else
+	\newcommand{\notes}[1]{}
+\fi
 
 %%%%%%%%%% GENERAL FORMATTING %%%%%%%%%%
 
