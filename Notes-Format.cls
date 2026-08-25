@@ -44,6 +44,7 @@
 \titlespacing{\chapter}{0pt}{0pt}{1.5em}
 \titleformat{\section}{\normalsize\bfseries}{\thesection}{0.5em}{}
 \titleformat{\subsection}{\normalsize}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}{\normalsize\normalfont}{}{}{}
 
 
 %%%%%%%%%% REFERENCES %%%%%%%%%%
