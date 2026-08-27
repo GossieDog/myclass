@@ -37,6 +37,7 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[american]{babel}
 
 \RequirePackage{verbatim}
 \RequirePackage{graphicx}
@@ -121,7 +122,11 @@
 \def\notelabel{Source}
 
 %%%%%%%%%% REFERENCES %%%%%%%%%%
-\RequirePackage{biblatex-chicago}
+\RequirePackage{etoolbox}
+\RequirePackage{keyval}
+\RequirePackage{ifthen}
+\RequirePackage{url}
+\RequirePackage[notes,backend=biber]{biblatex-chicago}
 
 \newcommand{\referencelist}{
 	\newpage

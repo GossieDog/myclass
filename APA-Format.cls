@@ -46,6 +46,7 @@
 % General packages
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[american]{babel}
 \RequirePackage{verbatim}
 \RequirePackage{graphicx}
 
