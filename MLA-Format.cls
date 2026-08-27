@@ -59,25 +59,25 @@
 
 \titleformat{\section}
 {
-	\normalsize\bfseries
+	\normalsize
 }
-{}{0em}{}
+{\thesection}{0em}{.\ }
 
 \titlespacing{\section}{0em}{0em}{0em}
 
 \titleformat{\subsection}
 {
-	\normalsize\itshape % Could use small caps
+	\normalsize
 }
-{}{0em}{}
+{\thesubsection}{0em}{ }
 
 \titlespacing{\subsection}{0em}{0em}{0em}
 
 \titleformat{\subsubsection}
 {
-	\centering\normalsize\bfseries
+	\normalsize
 }
-{}{0em}{}
+{\thesubsubsection}{0em}{ }
 
 \titlespacing{\subsubsection}{0em}{0em}{0em}
 
