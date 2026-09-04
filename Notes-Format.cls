@@ -19,7 +19,19 @@
 
 \ProvidesClass{Notes-Format}
 
+\newif\if@savetrees
+
+\DeclareOption{savetrees}{\@savetreestrue}
+
+\ProcessOptions\relax
+
 \LoadClass[12pt]{report}
+
+\if@savetrees
+	\AtBeginDocument{
+		\usepackage[extreme]{savetrees}
+	}
+\fi
 
 %%%%%%%%%% ENCODING AND FONTS %%%%%%%%%%
 \RequirePackage[T1]{fontenc}
