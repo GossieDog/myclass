@@ -21,9 +21,11 @@
 
 \newif\if@instructions
 \newif\if@notes
+\newif\if@savetrees
 
 \DeclareOption{instructions}{\@instructionstrue}
 \DeclareOption{notes}{\@notestrue}
+\DeclareOption{savetrees}{\@savetreestrue}
 
 \ProcessOptions\relax
 
@@ -43,6 +45,14 @@
 	\newcommand{\notes}[1]{#1}
 \else
 	\newcommand{\notes}[1]{}
+\fi
+
+%%%%%%%%%% Savetrees %%%%%%%%%%
+
+\if@savetrees
+	\AtBeginDocument{
+		\usepackage[extreme]{savetrees}
+	}
 \fi
 
 %%%%%%%%% GENERAL FORMATTING %%%%%%%%%%
