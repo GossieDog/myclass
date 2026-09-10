@@ -36,6 +36,7 @@
 %%%%%%%%%% ENCODING AND FONTS %%%%%%%%%%
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[american]{babel}
 
 \RequirePackage{newtxtext}
 % \RequirePackage[default]{sourcesanspro}
@@ -45,6 +46,9 @@
 \RequirePackage{amsmath}
 \RequirePackage{multicol}
 \RequirePackage{lipsum}
+\RequirePackage{enumitem}
+\RequirePackage{tabu}
+\RequirePackage{booktabs}
 
 %%%%%%%%%% QUOTES %%%%%%%%%%
 \RequirePackage{csquotes}
