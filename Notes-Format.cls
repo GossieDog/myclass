@@ -67,6 +67,9 @@
 \definecolor{lightbrown}{HTML}{F2EFE9}
 \mdfdefinestyle{mystyle}{innertopmargin=1cm, innerbottommargin=1cm, linewidth=1pt, leftline=false, rightline=false, backgroundcolor=lightbrown}
 
+\mdfdefinestyle{learningobjectives}{frametitle=Learning Objectives,frametitlebackgroundcolor=blue!20!white}
+\mdfdefinestyle{discussionquestions}{frametitle=Discussion Questions,frametitlebackgroundcolor=red!20!white}
+
 \RequirePackage{titlesec}
 \titleformat{\chapter}{\Large\bfseries}{\thechapter}{1em}{}[\vspace{2pt}{\titlerule[0.6pt]}\vspace{2pt}]
 \titlespacing{\chapter}{0pt}{0pt}{1.5em}
