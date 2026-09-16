@@ -30,6 +30,7 @@
 
 \RequirePackage{xcolor}
 \RequirePackage{enumitem}
+\RequirePackage{amsmath}
 
 \RequirePackage{titlesec}
 \titleformat{\section}{\large\bfseries}{}{0em}{}[{\vspace{2pt}\titlerule[1pt]}]
@@ -96,6 +97,16 @@
 		\textit{#3, #4}
 
 		#5
+	\end{mdframed}
+}
+
+\newcommand{\projectentry}[4]{
+	\begin{mdframed}[linecolor=white!20!orange,linewidth=2pt,topline=false,bottomline=false,rightline=false]
+		\raggedright%
+		\textbf{#1} \hfill #2 \\
+		\textit{#3}
+
+		#4
 	\end{mdframed}
 }
 
