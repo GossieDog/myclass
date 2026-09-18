@@ -69,6 +69,7 @@
 
 \mdfdefinestyle{learningobjectives}{frametitle=Learning Objectives,frametitlebackgroundcolor=blue!20!white}
 \mdfdefinestyle{discussionquestions}{frametitle=Discussion Questions,frametitlebackgroundcolor=red!20!white}
+\mdfdefinestyle{mdtitle}{frametitlebackgroundcolor=lightbrown}
 
 \RequirePackage{titlesec}
 \titleformat{\chapter}{\Large\bfseries}{\thechapter}{1em}{}[\vspace{2pt}{\titlerule[0.6pt]}\vspace{2pt}]
