@@ -70,6 +70,7 @@
 \mdfdefinestyle{learningobjectives}{frametitle={Learning Objectives},frametitlebackgroundcolor=blue!20!white}
 \mdfdefinestyle{discussionquestions}{frametitle={Discussion Questions},frametitlebackgroundcolor=red!20!white}
 \mdfdefinestyle{mdtitle}{frametitlebackgroundcolor=lightbrown}
+\mdfdefinestyle{mdquote}{topline=false,rightline=false,bottomline=false,linewidth=5pt,linecolor=lightbrown,leftmargin=2em,rightmargin=2em}
 
 \RequirePackage{titlesec}
 \titleformat{\chapter}{\Large\bfseries}{}{0em}{}[\vspace{2pt}{\titlerule[0.6pt]}\vspace{2pt}]
@@ -99,6 +100,9 @@
 
 %%%%%%%%%% CUSTOM COMMANDS %%%%%%%%%%
 \newcommand{\marginnote}[1]{\marginpar{\raggedright{#1}}}
+
+%%%%%%%%%% CUSTOM ENVIRONMENTS %%%%%%%%%%
+\renewenvironment{quote}{\begin{mdframed}[style=mdquote]}{\end{mdframed}}
 
 %%%%%%%%%% COVER PAGE %%%%%%%%%%
 \newcommand{\term}[1]{\def\@term{#1}}
