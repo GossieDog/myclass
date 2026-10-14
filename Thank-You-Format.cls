@@ -61,6 +61,7 @@
 \newcommand{\linkedin}[2]{\def\@linkedin{\href{#1}{#2}}}
 \newcommand{\email}[1]{\def\@email{\href{mailto:#1}{#1}}}
 \newcommand{\phone}[3]{\def\@phone{(#1) #2-#3}}
+\newcommand{\website}[2]{\def\@website{\href{#1}{#2}}}
 
 \newcommand{\company}[1]{\def\@company{\textit{#1}}}
 \newcommand{\companyaddress}[2]{\def\@companyaddress{
@@ -70,8 +71,8 @@
 \newcommand{\subject}[1]{\def\@subject{#1}}
 
 \newcommand{\signature}[1]{\def\@signature{\includegraphics[width=1in]{#1}}}
-\newcommand{\person}[1]{\def\@person{\textit{#1}}}
-\newcommand{\persontwo}[1]{\def\@persontwo{\textit{#1}}}
+\newcommand{\hiringmanager}[1]{\def\@hiringmanager{\textit{#1}}}
+\newcommand{\person}[1]{\def\@person{#1}}
 
 \newcommand{\header}{
 	\begin{center}
@@ -82,18 +83,19 @@
 		% \textcolor{white!20!orange}{\faMapMarker} \; \href{https://maps.app.goo.gl/8VcvwSbvJyw1xLkr5}{Burnaby, British Columbia} \quad
 		\@phone \quad
 		\@email \quad
-		\@linkedin
+		\@linkedin \quad
+		\@website
 	\end{center}
 
 	\today
 
 	\@company\\
-	\@person\\
+	\@hiringmanager\\
 	\@companyaddress
 
 	\textbf{\@subject}
 
-	Hi \@persontwo,
+	Dear \@person,
 }
 
 \if@sfu
@@ -107,7 +109,7 @@
 		Simon Fraser University\\
 		8888 University Dr., Burnaby, B.C. V5A 1S6
 
-		\includegraphics[width=2in]{~/Documents/Co-Op/Figures/SFU-IS.png}
+		\includegraphics[width=2in]{~/Documents/SFU-Co-Op/Figures/SFU-IS.png}
 
 		\begin{minipage}{4in}
 			\raggedright%
