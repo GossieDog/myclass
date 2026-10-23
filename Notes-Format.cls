@@ -70,7 +70,7 @@
 \mdfdefinestyle{learningobjectives}{frametitle={Learning Objectives},frametitlebackgroundcolor=blue!20!white}
 \mdfdefinestyle{discussionquestions}{frametitle={Discussion Questions},frametitlebackgroundcolor=red!20!white}
 \mdfdefinestyle{mdtitle}{frametitlebackgroundcolor=lightbrown}
-\mdfdefinestyle{mdquote}{topline=false,rightline=false,bottomline=false,linewidth=5pt,linecolor=lightbrown,leftmargin=2em,rightmargin=2em}
+\mdfdefinestyle{mdquote}{topline=false,rightline=false,bottomline=false,linewidth=5pt,linecolor=lightbrown,leftmargin=2em,rightmargin=2em,skipabove=0em,skipbelow=0em}
 
 \RequirePackage{titlesec}
 \titleformat{\chapter}{\Large\bfseries}{}{0em}{}[\vspace{2pt}{\titlerule[0.6pt]}\vspace{2pt}]
