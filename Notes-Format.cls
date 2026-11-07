@@ -62,6 +62,10 @@
 \fancyhead[r]{}
 \setlength{\headheight}{27.1pt}
 
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.5em}
+% \setlength{\skip\footins}{1em}
+
 %%%%%%%%%% TITLE AND SECTION FORMATTING %%%%%%%%%%
 \RequirePackage[xcolor]{mdframed}
 \definecolor{lightbrown}{HTML}{F2EFE9}
@@ -74,14 +78,19 @@
 
 \RequirePackage{titlesec}
 \titleformat{\chapter}{\Large\bfseries}{}{0em}{}[\vspace{2pt}{\titlerule[0.6pt]}\vspace{2pt}]
-\titlespacing{\chapter}{0pt}{0pt}{1.5em}
+\titlespacing{\chapter}{0pt}{0pt}{0.5em}
 \titleformat{\section}{\normalsize\bfseries}{\thesection}{0.5em}{}
+\titlespacing{\section}{0pt}{0pt}{0.5em}
 \titleformat{\subsection}{\normalsize}{\thesubsection}{0.5em}{}
+\titlespacing{\subsection}{0pt}{0pt}{0.5em}
 \titleformat{\subsubsection}{\normalsize\normalfont}{}{}{}
-
+\titlespacing{\subsubsection}{0pt}{0pt}{0.5em}
 
 %%%%%%%%%% REFERENCES %%%%%%%%%%
-\RequirePackage[backend=biber]{biblatex-chicago}
+\RequirePackage[backend=biber]{biblatex}
+
+%%%%%%%%%% FOOTNOTES %%%%%%%%%%
+\RequirePackage[symbol,perpage,bottom]{footmisc}
 
 %%%%%%%%%% LINKS %%%%%%%%%%
 \RequirePackage{hyperref}
@@ -96,7 +105,7 @@
 \usepackage{cleveref}
 
 %%%%%%%%%% TYPOGRAPHY %%%%%%%%%%
-\RequirePackage[nopatch=footnote]{microtype}
+\RequirePackage{microtype}
 
 %%%%%%%%%% CUSTOM COMMANDS %%%%%%%%%%
 \newcommand{\marginnote}[1]{\marginpar{\raggedright{#1}}}
