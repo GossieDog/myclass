@@ -137,15 +137,15 @@
 			\centering
 			{\Huge\textbf{\@title}}
 
-			\vspace{1cm}
+			\vspace{1.5em}
 
 			{\large{\@institution}}
 
-			\vspace{0.5cm}
+			\vspace{1em}
 
 			{\large{\@term}}
 
-			\vspace{0.5cm}
+			\vspace{1em}
 
 			{\large{\@author}}
 		\end{mdframed}
